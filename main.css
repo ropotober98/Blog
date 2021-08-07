@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Body y fondo. */
+
+body {
+    background-color: #ccc;
+    margin-left: 425px;
+    margin-right: 425px;
+}
+.fondo {
+    background-attachment: fixed;
+}
+
+/* Títulos del blog. */
+
+.cabecera {
+    border-radius: 4px;
+    padding: 25px;
+    font-family: 'Anton', sans-serif;
+    margin-top: 50px;
+    overflow: hidden;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.6);
+}
+.titulo {
+    /* font-family: sans-serif; */
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 2.3em;
+    text-align: center;
+    color: #242029;
+}
+.tituloSecundario {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+/* Propiedades de la caja. */
+
+.box {
+    overflow: hidden;
+    border: solid 2px #000;
+    border-radius: 4px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.6);
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+}
+.tituloCaja {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #fff;
+}
+.descripcion {
+    margin: 20px 30%;
+    text-align: center;
+    font-style: italic;
+    text-align: justify;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+/* Propiedades del índice. */
+
+.entradas {
+    text-align: center;
+    margin: 20px;
+    margin-top: 80px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.entradas .indice .estudios {
+    background-color: white;
+    border-left: solid 3px red;
+    margin: 10px;
+    /* width: 200px; */
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    display: inline;
+}
+.entradas .indice .estudios:hover {
+    transform: scale(1.1, 1.1); 
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(238, 82, 82, 0.3);
+}
+.entradas .indice .habitos {
+    background-color: white;
+    border-left: solid 3px green;
+    margin: 10px;
+    /* width: 200px; */
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    display: inline;
+}
+.entradas .indice .habitos:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(179, 243, 167, 0.3);
+}
+.entradas .indice .vidaSana {
+    background-color: white;
+    border-left: solid 3px blue;
+    margin: 10px;
+    /* width: 200px; */
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    display: inline;
+}
+.entradas .indice .vidaSana:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(127, 154, 245, 0.3);
+}
+.entradas .indice .concentracion {
+    background-color: white;
+    border-left: solid 3px yellow;
+    margin: 10px;
+    /* width: 200px; */
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    display: inline;
+}
+.entradas .indice .concentracion:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(245, 237, 127, 0.3);
+}
+.entradas .indice .disciplina {
+    background-color: white;
+    border-left: solid 3px purple;
+    margin: 10px;
+    /* width: 200px; */
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    display: inline;
+}
+.entradas .indice .disciplina:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(217, 127, 245, 0.3);
+}
+
+/* Títulos entradas. */
+
+.titulosIndice {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 2em;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #fff;
+}
+.titulosIndice:hover {
+    transform: scale(1.1, 1.1);
+}
+.titulosIndice .tituloEstudios:hover {
+    color: rgba(238, 82, 82, 1);
+} 
+.titulosIndice .tituloHabito:hover {
+    color: rgba(179, 243, 167, 1);
+} 
+.titulosIndice .tituloVsana:hover {
+    color: rgba(127, 154, 245, 1);
+} 
+.titulosIndice .tituloConcentracion:hover {
+    color: rgba(245, 237, 127, 1);
+} 
+.titulosIndice .tituloDisciplina:hover {
+    color: rgba(217, 127, 245, 1);
+} 
+.contenidoIndice {
+    font-size: 1.2em;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 80px;
+    color: #fff;
+}
